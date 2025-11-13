@@ -1,0 +1,102 @@
+# Core Dependencies
+python-dotenv==1.0.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Web Framework
+fastapi==0.109.0
+uvicorn==0.27.0
+websockets==12.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.3
+scikit-learn==1.4.0
+
+# AI/ML Models
+transformers==4.36.2
+torch==2.1.2
+torchvision==0.16.2
+tensorflow==2.15.0
+sentence-transformers==2.3.1
+openai==1.10.0
+groq==0.11.0
+diffusers==0.25.0
+accelerate==0.25.0
+
+# Deep Learning
+torch-geometric==2.4.0
+efficientnet-pytorch==0.7.1
+
+# NLP
+nltk==3.8.1
+vaderSentiment==3.3.2
+spacy==3.7.2
+
+# Image/Video Processing
+opencv-python==4.9.0.80
+Pillow==10.2.0
+imagehash==4.3.1
+
+# Social Media APIs
+tweepy==4.14.0
+praw==7.7.1
+telethon==1.34.0
+instaloader==4.15
+
+# Message Queue & Caching
+kafka-python==2.0.2
+redis==5.0.1
+celery==5.3.4
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+alembic==1.13.1
+
+# Graph Processing
+networkx==3.2.1
+python-louvain==0.16
+
+# Reinforcement Learning
+stable-baselines3==2.2.1
+gymnasium==0.29.1
+
+# Orchestration
+langgraph==0.0.20
+langchain==0.1.0
+langchain-openai==0.0.2
+
+# Vector Store
+pinecone-client==3.0.0
+chromadb==0.4.22
+
+# Web Scraping
+beautifulsoup4==4.12.3
+selenium==4.17.2
+requests==2.31.0
+
+# Fact-Checking APIs
+google-api-python-client==2.116.0
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+python-json-logger==2.0.7
+sentry-sdk==1.40.0
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
+pytest-cov==4.1.0
+httpx==0.26.0
+
+# Experiment Tracking
+mlflow==2.10.0
+
+# Utilities
+python-multipart==0.0.6
+aiofiles==23.2.1
+python-jose==3.3.0
+passlib==1.7.4
+python-dateutil==2.8.2
+tqdm==4.66.1
