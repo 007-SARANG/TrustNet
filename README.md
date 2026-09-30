@@ -5,21 +5,20 @@
 
 ## 🎯 Overview
 
-TrustNet 2.0 is a fully autonomous, multi-agent AI system that detects, analyzes, and intervenes against misinformation spread on social media in real-time. Using 6 specialized AI agents orchestrated by LangGraph, the system processes 10,000 posts/minute with 70%+ detection accuracy and 95% intervention success rate.
+TrustNet is a research and hackathon prototype for exploring a multi-agent misinformation analysis workflow. The repository describes a six-agent architecture, but it does not provide reproducible end-to-end benchmarks or evidence for production-scale automated interventions. Treat the architecture and integrations as a prototype until the implementation and evaluation are independently verified.
 
 ## 🏆 Key Features
 
-- **Autonomous Decision Making**: 80% of cases handled without human intervention
 - **Multimodal Analysis**: Text, image, and video deepfake detection
-- **Proactive Prevention**: Predicts viral spread before it happens (87% accuracy)
-- **Real-time Processing**: 250ms average processing time
+- **Proactive Prevention**: Includes a proposed viral-spread prediction component; no validated accuracy is reported
+- **Processing**: No end-to-end latency benchmark is published
 - **Continuous Learning**: RL-based agents that improve over time
-- **Production Ready**: Complete with API, dashboard, and monitoring
+- **Prototype Scope**: API and dashboard components are present; deployment readiness is not established
 
 ## 🤖 The Six Agents
 
 ### 1. Scout Agent - The Sentinel
-Monitors 10,000 posts/minute, detects anomalies, filters spam, and flags suspicious content.
+Designed to monitor incoming posts, detect anomalies, filter spam, and flag suspicious content; throughput has not been benchmarked.
 
 ### 2. Analyst Agent - The Detective
 Multi-modal classification using RoBERTa, CNN deepfake detection, CLIP cross-modal verification, and GPT-4 analysis.
@@ -59,7 +58,7 @@ Data Sources → Kafka → Redis → Scout → Analyst → Investigator
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/trustnet-2.0.git
+git clone https://github.com/007-SARANG/TrustNet.git
 cd trustnet-2.0
 
 # Set up Python environment
@@ -134,14 +133,9 @@ orchestration:
   max_concurrent_agents: 10
 ```
 
-## 📊 Performance Metrics
+## 📊 Evaluation Status
 
-- **Detection Accuracy**: 70.2%
-- **Viral Prediction Accuracy**: 87%
-- **Intervention Success Rate**: 95%
-- **False Positive Rate**: 5.2%
-- **Processing Time**: 250ms avg
-- **Throughput**: 10,000 posts/min
+The repository does not include reproducible end-to-end evidence for the previously listed accuracy, intervention, latency, or throughput figures. Those figures are withdrawn and should not be used to assess the system. Model-level metrics should be reported only alongside the dataset, split methodology, evaluation script, and measured results.
 
 ## 🧪 Testing
 
@@ -212,6 +206,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## 🏅 Hackathon Submission
 
-This project represents a complete, production-ready system for combating misinformation at scale. All components are functional, tested, and ready for deployment.
+This is a hackathon/research prototype. The repository’s architectural description is aspirational in places; component completeness, end-to-end tests, production readiness, and real-world intervention outcomes have not been established.
 
 **Built with ❤️ by the TrustNet Team**
